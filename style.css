@@ -1,103 +1,133 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
     width: 100%;
-    height: 100%;
-}
-
-main{
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-}
-
-#navbar{
-    background-color:#FFF1E6;
-    width: Hug (1,920px)px;
-    height: Hug (112px)px;
-    padding: 16px 108px 16px 108px;
-    gap: 170px;
-    opacity: 0px;
-    display: flex;
-}
-
-
-#logo{
-    width: 199px;
     height: 80px;
-    gap: 0px;
-    opacity: 0px;
-
+    padding: 16px 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF1E6;
 }
 
-#toplist{
-    width: Hug (1,335px)px;
-    height: Hug (69px)px;
-    gap: 60px;
-    opacity: 0px;
-    
-
+#logo {
+    width: 150px;
 }
-a{
+
+#navtop {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#navlinks {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#navlinks li {
+    list-style: none;
+}
+
+#navlinks li a {
     text-decoration: none;
     color: #000;
-
-}
-#list{
-    width: Hug (149px)px;
-    height: Hug (56px)px;
-    padding: 20px 0px 20px 0px;
-    gap: 16px;
-    opacity: 0px;
-
+    padding: 10px 0;
 }
 
-#buttons{
-    width: Hug (507px)px;
-    height: Hug (69px)px;
-    gap: 40px;
-    opacity: 0px;
-
+.line {
+    color: #000;
 }
-#toplist ul{
-    list-style-type: none;
+
+#buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: Fixed (768px)px;
-    height: Fixed (57px)px;
-    gap: 20px;
-    opacity: 0px;
-
+    gap: 15px;
 }
 
-@media screen {
-    #toplist ul {
-        flex-direction: row;
-        justify-content: center;
-    }
+#book-appointment, #help {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-
-
-#bookbutton{
-    width: 289px;
-    height: 69px;
-    gap: 0px;
-    opacity: 0px;
+#book-appointment {
     background: #F8943F;
+    color: white;
+}
+
+#help {
+    background: #FFEFE2;
+    color: #F8943F;
+    border: 2px solid #F8943F;
+}
+
+main {
+    background: #d9decf;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #a3b18a;
+    padding: 50px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+}
+
+.promo-text {
+    max-width: 50%;
+}
+
+.promo-text h1 {
+    width: Hug (985px)px;
+height: Hug (51px)px;
+gap: 60px;
+opacity: 0px;
+
+    white-space: nowrap;
+}
+
+.promo-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    
+}
+
+.buy-now {
+    padding: 15px 30px;
+    background: #F8943F;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.promo-image img {
+  
+height: 500px;
+top: 115px;
+left: 1135px;
+gap: 0px;
+opacity: 0px;
 
 
 }
 
-#helpbutton{
-    width: 66px;
-    height: 16px;
-    gap: 0px;
-    opacity: 0px;
 
-}
