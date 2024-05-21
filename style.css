@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+#navbar{
+    background-color:#FFF1E6;
+    width: Hug (1,920px)px;
+    height: Hug (112px)px;
+    padding: 16px 108px 16px 108px;
+    gap: 170px;
+    opacity: 0px;
+    display: flex;
+}
+
+
+#logo{
+    width: 199px;
+    height: 80px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+#toplist{
+    width: Hug (1,335px)px;
+    height: Hug (69px)px;
+    gap: 60px;
+    opacity: 0px;
+    
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+
+}
+#list{
+    width: Hug (149px)px;
+    height: Hug (56px)px;
+    padding: 20px 0px 20px 0px;
+    gap: 16px;
+    opacity: 0px;
+
+}
+
+#buttons{
+    width: Hug (507px)px;
+    height: Hug (69px)px;
+    gap: 40px;
+    opacity: 0px;
+
+}
+#toplist ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: Fixed (768px)px;
+    height: Fixed (57px)px;
+    gap: 20px;
+    opacity: 0px;
+
+}
+
+@media screen {
+    #toplist ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+
+#bookbutton{
+    width: 289px;
+    height: 69px;
+    gap: 0px;
+    opacity: 0px;
+    background: #F8943F;
+
+
+}
+
+#helpbutton{
+    width: 66px;
+    height: 16px;
+    gap: 0px;
+    opacity: 0px;
+
+}
