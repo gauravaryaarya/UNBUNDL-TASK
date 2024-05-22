@@ -8,59 +8,65 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
+
+/*NAVBAR STARTS FROM HERE*/
 #navbar {
-    width: Hug (1,920px)px;
-height: Hug (112px)px;
-padding: 16px 108px 16px 108px;
-gap: 170px;
-opacity: 0px;
-background: #FFF1E6;
-display: flex;
-position: fixed;
+    width: 100vw;
+    height: Hug (112px)px;
+    padding: 1vw 0vw 1vw 5vw;
+    gap: 10vw;
+    background: #FFF1E6;
+    display: flex;
+    position: fixed;
+    z-index: 9;
 }
 
 #logo {
-    width: 150px;
+    width: 10vw;
 }
 
 #navtop {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 7vw;
 }
 
+
+/*LIST*/
 #navlinks {
     display: flex;
     align-items: center;
-    gap: 15px;
-    height: 57px;
-    width: 660px;
+    justify-content: center;
+    gap: 1.6vw;  
 }
 
 #navlinks li {
     list-style: none;
-    
 }
 
 #navlinks li a {
     text-decoration: none;
     color: #000;
-    padding: 10px 0;
-    
 }
 
 .line {
     color: #000;
 }
+/*LIST ENDS*/
 
+
+
+/*BUTTONS*/
 #buttons {
     display: flex;
-    gap: 15px;
+    gap: 1vw;
 }
 
 #book-appointment, #help {
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 1.2vw;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -70,9 +76,8 @@ position: fixed;
 #book-appointment {
     background: #F8943F;
     color: white;
-    width: 240px;
-    height: 60px;
-    font-size: 16px;
+    padding-left: 1.5vw;
+    font-size: 1.07vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,162 +85,171 @@ position: fixed;
     
 }
 
-#bookbox{
-    position: relative;
-    top: 1px;
-    
-}
 #pagelike{
-   position: fixed;
+    position: fixed;
     z-index: 1;
-
-    width: 27.96px;
-height: 31.37px;
-
-gap: 0px;
-opacity: 0px;
-
 }
 
 #pagelikeborder{
-    padding-top: 4px;
-    padding-left: 2px;
+    padding-top: 0.25vw;
+    padding-left: 0.25vw;
     position: relative;
-   z-index: 9;
-   position: fixed;
-    
-    
-   
+    z-index: 9;
+    position: fixed;
 }
+
 #bookmark{
     position: relative;
     z-index: 9;
-    padding-bottom: 20px;
-    left: 10px;
-    top: 4px;
-   
-    
+    padding-bottom: 1.3vw;
+    left: 0.7vw;
+    top: 0.2vw;
 }
 
 #bookapptext{
-    display: inline;
     position: relative;
-    right: 30px;
-    align-items: center;
-    justify-content: center;
+    right: 1.3vw;
 }
 
 #bookmarkborder{
     position: relative;
     z-index: 9;
-    padding-bottom: 20px;
-    left: -4px;
-    
-    top: 4px;
+    padding-bottom: 1.25vw;
+    left: -0.2vw;
+    top: 0.24vw;
 }
 
 .brownline{
     position: relative;
     z-index: 9;
-    right: 22px;
-    bottom: 10px;
+    right: 1.4vw;
+    bottom: 0.6vw;
 }
 .brownline2{
-    width: 15px;
+    width: 0.9vw;
     position: relative;
     z-index: 9;
-    right: 43.2px;
-    bottom: 7px;
+    right: 2.79vw;
+    bottom: 0.45vw;
 }
 
 .brownline3{
-    width: 10px;
+    width: 0.7vw;
     position: relative;
     z-index: 9;
-    right: 62.5px;
-    bottom: 4.1px;
+    right: 3.99vw;
+    bottom: 0.3vw;
 }
 
 #help {
     position: relative;
     background: #FFEFE2;
     color: #F8943F;
-    border: 2px solid #F8943F;
-    height: 60px;
-    width: 130px;
-    font-size: 16px;
+    border: 0.2vw solid #F8943F;
+    height: 4vw;
+    width: 8vw;
+    font-size: 1.3vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.6vw;
 }
 
 #help img{
-    height: 24px;
+    height: 1.5vw;
 
 }
+/*BUTTON ENDS*/
+/*NAVBAR ENDS*/
 
-main {
-    background: #d9decf;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.promo {
+/*MAKING NAVBAR RESPONSIVE*/
+@media (max-width:600px){
+    #navbar{
+        width: 100vw;
+    }
+    #navtop{
+        font-size: 1.5vw;
+        white-space: nowrap;
+    }
+    #logo{
+        padding-top: 1vw;
+        
+    }
+    #book-appointment {
+        padding-right: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1vw;
+        width: 10vw;
+        height: 3vw;
+    }
+    #pagelike{
+        width: 0px;
+    }
     
+    #pagelikeborder{
+        width: 0px;
+    }
+    #bookmark{
+        width: 0px;
+    }
+    #bookapptext{
+        width: 0px;
+    }
+    #bookmarkborder{
+        width: 0px;
+    }
+    .brownline{
+        width: 0px;
+    }
+    .brownline2{
+        width: 0px;
+    }
+    .brownline3{
+        width: 0px;
+    }
+    #help {
+        width: 0px;
+        height: 0px;
+        font-size: 0px;
+        border: 0px;
+    }
+    #help img{
+        width: 0px;
+    
+    }
+}
+
+/*LANDING PAGE STARTS*/
+.promo {
+    background-color:#A3B18A ;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #a3b18a;
-    padding: 50px;
-    padding-bottom: 0px;
-    width: 100%;
-height: 550px;
-padding-top: 57px;
-top: 112px;
-gap: 0px;
-opacity: 0px;
-
-}
-
-.promo-text {
-    max-width: 50%;
+    padding: 13vw 10vw 2vw 10vw;
 }
 
 .promo-text h1 {
-    font-size: 4rem;
-    width: Hug (985px)px;
-height: Hug (51px)px;
-gap: 60px;
-opacity: 0px;
-color: #303030;
-
-
+    font-size: 3.2vw;
+    color: #303030;
     white-space: nowrap;
 }
 
 .promo-text p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    width: 497px;
-height: 29px;
-gap: 0px;
-opacity: 0px;
-
-    
+    font-size: 2vw;
+    margin-bottom: 1.2vw;
+    width: 29vw;
+    height: 5vh;
 }
 
 #p1{
     font-family: Open Sans;
-font-size: 35px;
-font-weight: 400;
-line-height: 52px;
-text-align: left;
-color: #525252;
-
-
+    font-weight: 500;
+    line-height: 3vw;
+    text-align: left;
+    color: #525252;
 }
 
 #p2{
@@ -244,50 +258,69 @@ color: #525252;
 }
 
 .buy-now {
-    width: 400px;
-    height: 72px;
-    padding: 15px 30px;
+    width: 30vw;
+    height: 5vw;
+    padding: 1vw 4vw;
     background: #F8943F;
     color: white;
     border: none;
-    border-radius: 25px;
-    font-size: 1.2rem;
+    border-radius: 2vw;
+    font-size: 2vw;
     cursor: pointer;
-    font-size: 24px;
 }
 
 .promo-image img {
-  
-height: 400px;
+    position: relative;
+    height: 30vw;
+    bottom: 0vw;
+    padding-bottom: 0vw;
+    top: 2.25vw;
+    width: 30vw;
+    z-index: 0;
+}
+/*LANDING PAGE ENDS*/
 
-top: 115px;
-left: 1135px;
-gap: 0px;
-opacity: 0px;
 
-
+/*RESPONSIVENESS IN LANDING PAGE*/
+@media (max-width:600px) {
+    .promo {
+        padding: 20vw 10vw 2vw 10vw;
+    }
+    
+    .promo-text h1 {
+        
+    }
+    
+    .promo-text p {
+        height: 1vh;
+    }
+    
+    .promo-image img {
+        top: 3vw;
+    }
 }
 
 
-
-
-
-
+/*clinic information*/
 .clinic-info {
-    padding-top: 86px;
+    padding-top: 2.2vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: Arial, sans-serif;
-    height: 100px;
+    height: 10vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
-.clinic-details {
-    margin-right: 20px;
+.location{
+    display:flex;
+    flex-direction: column;
+    gap: 1vw;
 }
 
 .highlight {
-    font-size: 1.5em;
+    font-size: 2.5vw;
     color: #f57c00;
 }
 
@@ -296,38 +329,70 @@ opacity: 0px;
     align-items: center;
 }
 
-.google-rating {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.google-logo {
-    font-size: 2em;
-    color: #4285f4;
-    margin-right: 5px;
-}
-
-.rating-value {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
 .city-select {
-    padding: 5px;
-    margin-right: 10px;
+    width: 17vw;
+    height: 3vw;
+    padding: 0.8vw 4vw;
+    border-radius: 2vw;
+    font-size: 1vw;
+    
 }
 
 .locate-button {
+    font-size: 1vw;
     background-color: #f57c00;
     color: white;
     border: none;
-    padding: 10px 15px;
+    width: 17vw;
+    height: 3vw;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .locate-button:hover {
     background-color: #e66a00;
+}
+
+.clinic-details p{
+    font-size: 2vw;
+}
+
+#section2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+/*Responsiveness of clinic-info*/
+@media (max-width:600px) {
+    .clinic-info {
+        padding-top: 10vw;
+        white-space: nowrap;
+   }
+    
+    .location{
+        display:flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    
+    .highlight {
+        font-size: 2.5vw;
+        color: #f57c00;
+    }
+    
+   .google-rating img{
+    height: 7vw;
+    padding-right: 13vw;
+
+   }
+    .city-select {
+        font-size: 0.5vw;
+    }
+
+    .clinic-details p{
+        font-size: 1vw;
+    }
+    
 }
