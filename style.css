@@ -358,11 +358,7 @@ html, body {
     font-size: 2vw;
 }
 
-#section2{
-    height: 100vh;
-    width: 100vw;
-    background-color: #000;
-}
+
 
 /*Responsiveness of clinic-info*/
 @media (max-width:600px) {
@@ -395,4 +391,81 @@ html, body {
         font-size: 1vw;
     }
     
+}
+
+/*SECTION 2 BEGINS*/
+/* #section2{
+    height: 85vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15vw 10vw 15vw 10vw;
+}
+
+#colordiv{
+    height:78vh;
+    width: 100vw;
+    border-radius:3vw ;
+    background: #FFF9F4;
+}
+
+
+
+@media (max-width:600px) {
+    
+} */
+
+/* TREATMENTS SECTION */
+.treatments {
+    padding: 2rem;
+    background: #FFF4EC;
+    text-align: center;
+}
+
+.treatments h2 {
+    font-size: 1.5rem;
+    color: #303030;
+    margin-bottom: 2rem;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.treatment-item {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.treatment-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.treatment-item p {
+    font-size: 1rem;
+    color: #525252;
+}
+
+.explore-treatments {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #F8943F;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.explore-treatments:hover {
+    background: #e66a00;
 }
