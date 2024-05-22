@@ -9,13 +9,14 @@ html, body {
 }
 
 #navbar {
-    width: 100%;
-    height: 80px;
-    padding: 16px 108px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #FFF1E6;
+    width: Hug (1,920px)px;
+height: Hug (112px)px;
+padding: 16px 108px 16px 108px;
+gap: 170px;
+opacity: 0px;
+background: #FFF1E6;
+display: flex;
+position: fixed;
 }
 
 #logo {
@@ -32,16 +33,20 @@ html, body {
     display: flex;
     align-items: center;
     gap: 15px;
+    height: 57px;
+    width: 660px;
 }
 
 #navlinks li {
     list-style: none;
+    
 }
 
 #navlinks li a {
     text-decoration: none;
     color: #000;
     padding: 10px 0;
+    
 }
 
 .line {
@@ -59,17 +64,115 @@ html, body {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 #book-appointment {
     background: #F8943F;
     color: white;
+    width: 240px;
+    height: 60px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    
+}
+
+#bookbox{
+    position: relative;
+    top: 1px;
+    
+}
+#pagelike{
+   position: fixed;
+    z-index: 1;
+
+    width: 27.96px;
+height: 31.37px;
+
+gap: 0px;
+opacity: 0px;
+
+}
+
+#pagelikeborder{
+    padding-top: 4px;
+    padding-left: 2px;
+    position: relative;
+   z-index: 9;
+   position: fixed;
+    
+    
+   
+}
+#bookmark{
+    position: relative;
+    z-index: 9;
+    padding-bottom: 20px;
+    left: 10px;
+    top: 4px;
+   
+    
+}
+
+#bookapptext{
+    display: inline;
+    position: relative;
+    right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#bookmarkborder{
+    position: relative;
+    z-index: 9;
+    padding-bottom: 20px;
+    left: -4px;
+    
+    top: 4px;
+}
+
+.brownline{
+    position: relative;
+    z-index: 9;
+    right: 22px;
+    bottom: 10px;
+}
+.brownline2{
+    width: 15px;
+    position: relative;
+    z-index: 9;
+    right: 43.2px;
+    bottom: 7px;
+}
+
+.brownline3{
+    width: 10px;
+    position: relative;
+    z-index: 9;
+    right: 62.5px;
+    bottom: 4.1px;
 }
 
 #help {
+    position: relative;
     background: #FFEFE2;
     color: #F8943F;
     border: 2px solid #F8943F;
+    height: 60px;
+    width: 130px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#help img{
+    height: 24px;
+
 }
 
 main {
@@ -81,13 +184,20 @@ main {
 }
 
 .promo {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #a3b18a;
     padding: 50px;
     padding-bottom: 0px;
-    border-radius: 15px;
+    width: 100%;
+height: 550px;
+padding-top: 57px;
+top: 112px;
+gap: 0px;
+opacity: 0px;
+
 }
 
 .promo-text {
@@ -95,10 +205,13 @@ main {
 }
 
 .promo-text h1 {
+    font-size: 4rem;
     width: Hug (985px)px;
 height: Hug (51px)px;
 gap: 60px;
 opacity: 0px;
+color: #303030;
+
 
     white-space: nowrap;
 }
@@ -106,10 +219,33 @@ opacity: 0px;
 .promo-text p {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    width: 497px;
+height: 29px;
+gap: 0px;
+opacity: 0px;
+
     
 }
 
+#p1{
+    font-family: Open Sans;
+font-size: 35px;
+font-weight: 400;
+line-height: 52px;
+text-align: left;
+color: #525252;
+
+
+}
+
+#p2{
+    color: #303030;
+
+}
+
 .buy-now {
+    width: 400px;
+    height: 72px;
     padding: 15px 30px;
     background: #F8943F;
     color: white;
@@ -117,11 +253,13 @@ opacity: 0px;
     border-radius: 25px;
     font-size: 1.2rem;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .promo-image img {
   
-height: 500px;
+height: 400px;
+
 top: 115px;
 left: 1135px;
 gap: 0px;
@@ -131,3 +269,65 @@ opacity: 0px;
 }
 
 
+
+
+
+
+.clinic-info {
+    padding-top: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    height: 100px;
+}
+
+.clinic-details {
+    margin-right: 20px;
+}
+
+.highlight {
+    font-size: 1.5em;
+    color: #f57c00;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+}
+
+.google-rating {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.google-logo {
+    font-size: 2em;
+    color: #4285f4;
+    margin-right: 5px;
+}
+
+.rating-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.city-select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.locate-button {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.locate-button:hover {
+    background-color: #e66a00;
+}
