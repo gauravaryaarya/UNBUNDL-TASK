@@ -832,8 +832,8 @@ html, body {
 
 .stats img{
     position: relative;
-    left: -15vw;
-    width: 30vw;
+    left: -10vw;
+    width: 40vw;
 }
 .stats {
     display: flex;
@@ -860,14 +860,12 @@ html, body {
     font-weight: bold;
 }
 
-.doctors-info {
-    display: flex;
-    width: 100vw;
-    margin-bottom: 5vh;
-}
 
-.doctors-info img{
-    width: 65vw;
+#docpic img{
+    width: 44vw;
+    height: 50vh;
+    position: relative;
+    left: -5vw;
 }
 
 .experience {
@@ -889,3 +887,30 @@ html, body {
     background-color: #E06A1E;
 }
 
+/*RESPONSIVENESS TO SECTION-5*/
+@media (max-width:600px){
+    .specialists-section {
+       height: 45vh;
+    }
+    
+    .stats img{
+        top: -5vw;
+        position: relative;
+        height: 30vh;
+    }
+    #docpic img{
+       
+        height: 20vh;
+        position: relative;
+        
+    }
+    .meet-doctors{
+        position: relative;
+        top: -23vw;
+        left: 20vw;
+    }
+    .specialists-info h2 {
+        font-size: 2vw;
+    }
+
+}
