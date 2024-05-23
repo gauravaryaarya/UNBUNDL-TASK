@@ -177,7 +177,7 @@ html, body {
         
     }
     #book-appointment {
-        padding-right: 8vw;
+        padding-right: 9vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -393,6 +393,8 @@ html, body {
     
 }
 
+
+/*TRYING SECTION-2 ROUGH*/
 /*SECTION 2 BEGINS*/
 /* #section2{
     height: 85vh;
@@ -417,55 +419,372 @@ html, body {
     
 } */
 
-/* TREATMENTS SECTION */
+
+/* SECTION -2 TREATMENTS SECTION */
 .treatments {
-    padding: 2rem;
+    padding: 5vw;
+    margin: 4vw;
+    margin-left: 8vw;
+    margin-right: 68w;
     background: #FFF4EC;
     text-align: center;
+    border-radius: 3vw;
 }
 
 .treatments h2 {
-    font-size: 1.5rem;
+    font-size: 2vw;
     color: #303030;
-    margin-bottom: 2rem;
+    margin-bottom: 3vw;
 }
 
 .treatment-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 5vw;
+    margin-bottom: 5vw;
 }
 
 .treatment-item {
+    width: 10vw;
     background: #fff;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1vw;
+    padding: 1vw ;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .treatment-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1vw;
 }
 
 .treatment-item p {
-    font-size: 1rem;
+    font-size: 1vw;
     color: #525252;
+    font-weight: 600;
 }
 
 .explore-treatments {
+    
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #F8943F;
+    padding: 1vw 1vw;
+    color: #4d2c19;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+#exploring{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*ADJUSTING SOME IMAGES OF TREATMENT*/
+#braces{
+    padding-top: 3.8vw;
+
+}
+
+#whitening img{
+    padding-left:1.5vw ;
+}
+
+#inbraces{
+    padding-top: 2vw;
+}
+#smileline , #smileline1{
+    display: flex;
+    gap: 2vw;
+    padding-top: 1vw;
+    padding-left: 6vw;
+}
+/*SECTION 2 COMPETED*/
+
+/*ADDING RESPONSIVENESS TO SECTION-2*/
+@media (max-width:600px){
+    
+    
+
+    #smileline{
+       display: flex;
+       padding: 1vw;
+       padding-left: 3vw;
+       gap: 2vw;
+       font-size: 1vw;
+    }
+    #smileline1{
+        font-size: 1vw;
+        padding: 1vw;
+        padding-left: 3vw;
+        display: flex;
+        gap: 2vw;
+    }
+
+    .treatment-grid {
+        
+        height: 15vh;
+        width:10vw;
+    }
+    
+    .treatment-item{
+        width: 10vw;
+    }
+    
+    .treatment-item img {
+        height: 1.2vh;
+        width: 2vw;
+    }
+
+    #exploring{
+        padding-top: 5vw;
+    }
+    
+}
+
+/*SECTION-3 BEGINS*/
+.contact-section {
+    display: flex;
+    padding-left: 10vw;
+    margin-top: 15vw;
+}
+
+.contact-form {
+    background-color: #FDF4EE;
+    padding: 5vh 3vw;
+    border-radius: 1vw;
+    width: 30vw;
+    border-radius: 2vw;
+}
+
+.contact-form h2 {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+   
+}
+
+.contact-form p {
+    margin-bottom: 3vh;
+    font-size: 2vh;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form button {
+    padding: 1.5vh 1vw;
+    margin-bottom: 2vh;
+    font-size: 2vh;
+    border-radius: 0.5vw;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #FF7F32;
     color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #E06A1E;
+}
+
+.info {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.safety-protocols {
+    background-color: #F9F5FF;
+    padding: 5vh 3vw;
+    border-radius: 1vw;
+    width: 45vw;
+}
+.safety-protocols img{
+    height: 40vh;
+}
+.safety-protocols {
+    display: flex;
+}
+.safety-protocols h3 {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+.safety-protocols p {
+    margin-bottom: 3vh;
+    font-size: 2vh;
+}
+
+.safety-protocols a {
+    color: #FF7F32;
+    font-size: 2vh;
     text-decoration: none;
-    border-radius: 0.5rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.neighbourhood,
+.doctors {
+    background-color: #EAF9FE;
+    padding: 3vh 2vw;
+    border-radius: 1vw;
+    width: 20vw;
+    text-align: center;
+}
+
+.neighbourhood p,
+.doctors p {
+    margin-bottom: 2vh;
+    font-size: 2vh;
+}
+
+.neighbourhood a,
+.doctors a {
+    color: #FF7F32;
+    font-size: 2vh;
+    text-decoration: none;
+}
+
+/*SECTION-4 BEGINS*/
+
+.testimonials-section {
+    padding: 5vh 5vw;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 4vh;
+    margin-bottom: 5vh;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 18vw;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+    margin-bottom: 2vh;
+}
+
+.testimonial p {
+    margin: 0;
+    font-size: 2vh;
+}
+
+.treatment {
+    color: #FF7F32;
+    font-size: 2vh;
+}
+
+/*SECTION-5 BEGINS*/
+.specialists-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 5vw;
+    background-color: #FDF4EE;
+}
+
+.specialists-info {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.specialists-info h2 {
+    font-size: 4vh;
+    margin-bottom: 5vh;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18vw;
+}
+
+.stat img {
+    width: 5vw;
+    height: auto;
+    margin-bottom: 2vh;
+}
+
+.stat p {
+    margin: 0;
+    font-size: 2vh;
+}
+
+.highlight {
+    color: #FF7F32;
+    font-size: 2.5vh;
     font-weight: bold;
 }
 
-.explore-treatments:hover {
-    background: #e66a00;
+.doctors-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin-bottom: 5vh;
 }
+
+.doctor {
+    text-align: center;
+    width: 20vw;
+}
+
+.doctor img {
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+    margin-bottom: 2vh;
+}
+
+.doctor p {
+    margin: 0;
+    font-size: 2.5vh;
+}
+
+.experience {
+    font-size: 2vh;
+    color: #555;
+}
+
+.meet-doctors {
+    background-color: #FF7F32;
+    color: white;
+    border: none;
+    padding: 1.5vh 3vw;
+    font-size: 2.5vh;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.meet-doctors:hover {
+    background-color: #E06A1E;
+}
+
