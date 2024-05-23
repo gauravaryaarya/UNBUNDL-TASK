@@ -555,7 +555,8 @@ html, body {
 }
 
 .contact-form h2 {
-    font-size: 3vh;
+    font-size: 2.5vw;
+    white-space: nowrap;
     margin-bottom: 2vh;
    
 }
@@ -566,6 +567,7 @@ html, body {
 }
 
 .contact-form form {
+    padding-top: 4vw;
     display: flex;
     flex-direction: column;
 }
@@ -573,10 +575,11 @@ html, body {
 .contact-form input,
 .contact-form select,
 .contact-form button {
-    padding: 1.5vh 1vw;
+    padding: 2vh 1vw;
+    width: 23vw;
     margin-bottom: 2vh;
-    font-size: 2vh;
-    border-radius: 0.5vw;
+    font-size: 3vh;
+    border-radius: 6vw;
     border: 1px solid #ccc;
 }
 
@@ -605,13 +608,19 @@ html, body {
     width: 45vw;
 }
 .safety-protocols img{
-    height: 40vh;
+    height: 35vh;
+    position: relative;
+    top: -2.4vw;
+    right: 2vw;
+    
 }
 .safety-protocols {
     display: flex;
+    height: 35vh;
 }
 .safety-protocols h3 {
-    font-size: 3vh;
+    font-size: 5vh;
+    white-space: nowrap;
     margin-bottom: 2vh;
 }
 
@@ -621,9 +630,11 @@ html, body {
 }
 
 .safety-protocols a {
-    color: #FF7F32;
+    color: #4d2c19;
+    top: 3vw;
+    position: relative;
     font-size: 2vh;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .details {
@@ -654,13 +665,102 @@ html, body {
     font-size: 2vh;
     text-decoration: none;
 }
+/*SECTION-3 ENDS*/
+
+/*RESPONSIVENESS FOR SECTION-3*/
+@media (max-width:600px){
+    
+    .contact-form {
+       
+       height: 34vh;
+    }
+    
+    .contact-form h2 {
+        font-size: 2vw;
+        margin-bottom: 1vh;
+    }
+    
+    .contact-form p {
+        font-size: 1vh;
+    }
+    
+    .contact-form form {
+        padding-top: 0vw;
+    }
+    
+    .contact-form input,
+    .contact-form select,
+    .contact-form button {
+        width: 24vw;
+        padding: 1vw;
+        height: 3vh;
+        font-size: 1vh;
+    }
+    
+    .safety-protocols img{
+        height: 20vh;
+        position: relative;
+        top: -8vw;
+        right: 6vw;
+        
+    }
+    .safety-protocols {
+        display: flex;
+        height: 20vh;
+    }
+    .safety-protocols h3 {
+        position: relative;
+        top: -5vw;
+        font-size: 1vh;
+       
+    }
+    
+    .safety-protocols p {
+        font-size: 1vh;
+    }
+    
+    .safety-protocols a {
+        top: -2vw;
+        font-size: 1vh;
+    }
+    
+    .details {
+        height: 11vh;
+        position: relative;
+       top: -5vw;
+    }
+    
+    .neighbourhood p,
+    .doctors p {
+        position: relative;
+        top: -3vw;
+        font-size: 1vh;
+    }
+    
+    .neighbourhood a,
+    .doctors a {
+        position: relative;
+        top: -7vw;
+        white-space: nowrap;
+        font-size: 1vh;
+    }
+
+    .neighbourhood img , .doctors img{
+        height: 3vh;
+        position: relative;
+        top: -5vw;
+    }
+}
+
 
 /*SECTION-4 BEGINS*/
 
 .testimonials-section {
-    padding: 5vh 5vw;
+    padding: 0vh 1vw 5vw;
     text-align: center;
+
 }
+
 
 .testimonials-section h2 {
     font-size: 4vh;
@@ -672,6 +772,7 @@ html, body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .testimonial {
     width: 18vw;
@@ -686,6 +787,9 @@ html, body {
     margin-bottom: 2vh;
 }
 
+#lastpic{
+    height: 64.4vh;
+}
 .testimonial p {
     margin: 0;
     font-size: 2vh;
@@ -694,6 +798,15 @@ html, body {
 .treatment {
     color: #FF7F32;
     font-size: 2vh;
+}
+/*section-4 ends*/
+
+/*responsiveness to sec-4*/
+@media (max-width:600px){
+
+    #lastpic{
+        height: 19.2vh;
+    }
 }
 
 /*SECTION-5 BEGINS*/
@@ -711,19 +824,25 @@ html, body {
 }
 
 .specialists-info h2 {
-    font-size: 4vh;
+    position: relative;
+    left: -30vw;
+    font-size: 3vh;
     margin-bottom: 5vh;
 }
 
+.stats img{
+    position: relative;
+    left: -15vw;
+    width: 30vw;
+}
 .stats {
     display: flex;
-    justify-content: space-around;
+   
     width: 60vw;
 }
 
 .stat {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 18vw;
 }
@@ -734,10 +853,6 @@ html, body {
     margin-bottom: 2vh;
 }
 
-.stat p {
-    margin: 0;
-    font-size: 2vh;
-}
 
 .highlight {
     color: #FF7F32;
@@ -747,26 +862,12 @@ html, body {
 
 .doctors-info {
     display: flex;
-    justify-content: space-between;
-    width: 80vw;
+    width: 100vw;
     margin-bottom: 5vh;
 }
 
-.doctor {
-    text-align: center;
-    width: 20vw;
-}
-
-.doctor img {
-    width: 100%;
-    height: auto;
-    border-radius: 1vw;
-    margin-bottom: 2vh;
-}
-
-.doctor p {
-    margin: 0;
-    font-size: 2.5vh;
+.doctors-info img{
+    width: 65vw;
 }
 
 .experience {
